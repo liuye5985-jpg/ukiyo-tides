@@ -1,9 +1,56 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eeeadd"><meta name="description" content="浮世·潮汐：以葛饰北斋《神奈川冲浪里》为灵感的身体交互艺术。挥手造浪，张臂起潮。"><title>浮世 · 潮汐 — 与北斋共赴一场海</title><link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
-<body><header><a class="brand" href="#"><span class="brand-icon">≈</span>浮世 · 潮汐 <small>UKIYO / TIDES</small></a><a href="#about" class="nav-link">关于作品 <span>↗</span></a></header>
-<main><section class="intro"><div><p class="eyebrow">INTERACTIVE ART STUDY / 001</p><h1>让身体，<br>成为海的呼吸<span>。</span></h1></div><div class="intro-right"><p>一幅静止了近两百年的海，<br>在你的动作里，再次涌起。</p><span class="work-credit">葛饰北斋 ·《神奈川冲浪里》· 1830–1833</span></div></section>
-<section class="experience" aria-label="互动名画体验"><div class="stage" id="stage"><img id="painting" src="assets/great-wave-original.png" alt="葛饰北斋《神奈川冲浪里》：巨浪环抱远方的富士山，舟船驶过靛蓝色海面。"><canvas id="art" aria-label="动态海浪画面"></canvas><canvas id="foam" aria-hidden="true"></canvas><div class="stage-top"><span class="live"><i></i><span id="modeLabel">指尖造浪</span></span><button class="icon-button" id="fullscreen" aria-label="全屏体验" title="全屏体验">⛶</button></div><div class="stage-bottom"><div><span class="vertical">神奈川沖浪裏</span><span class="seal">浮世</span></div><span class="stage-hint" id="stageHint">移动鼠标 / 轻触画面，唤醒海浪</span></div><div class="loader" id="loader">正在展开画卷…</div><video id="camera" playsinline muted hidden></video></div>
-<div class="toolbar"><div class="controls"><button class="primary" id="cameraToggle"><span>◉</span> 开启身体交互</button><button id="soundToggle" aria-pressed="false">♫ <span>开启海声</span></button><button id="save">↓ 留住此刻</button><button id="reset">↺ 重置</button></div><div class="tide"><span>潮势</span><div class="meter"><i id="meter"></i></div><output id="tideValue">平潮</output></div></div><p class="status" id="status" role="status" aria-live="polite">无需摄像头即可体验。开启身体交互后，退后一步，让镜头看到上半身。</p></section>
-<section class="gestures" aria-label="交互方式"><article><span class="step">01 / FLOW</span><div class="gesture-icon">〰</div><h2>挥手 · 推动浪流</h2><p>手腕带动水纹，动作越快，<br>海面越有力量。</p></article><article><span class="step">02 / TIDE</span><div class="gesture-icon">↔</div><h2>张臂 · 唤起潮汐</h2><p>双臂慢慢展开，<br>看海浪与声场一起生长。</p></article><article><span class="step">03 / LIGHT</span><div class="gesture-icon">✧</div><h2>举手 · 点亮浪花</h2><p>双手举过头顶，<br>让细碎的浪花化作星光。</p></article></section>
-<section class="about" id="about"><div><p class="eyebrow">A DIALOGUE ACROSS TIME</p><h2>人在画外，<br>心在浪中。</h2></div><div><p>北斋以木版凝住巨浪将落未落的瞬间。这件作品以原画为画布，将身体的速度、幅度与姿态，转译为水纹、潮势和声音。远处的富士山依然安定，眼前的海却开始回应你。</p><p class="note">鼠标 / 触屏：移动造浪，长按增强潮势，点击激起涟漪。键盘：空格暂停，M 切换声音，S 保存，R 重置。摄像头画面仅在当前浏览器处理，不上传、不保存。</p><a href="https://www.artic.edu/artworks/24645" target="_blank" rel="noopener noreferrer">原作资料 · 芝加哥艺术博物馆 ↗</a> <a href="https://commons.wikimedia.org/wiki/File:The_Great_Wave_off_Kanagawa.png" target="_blank" rel="noopener noreferrer">图像来源 · Wikimedia Commons ↗</a></div></section></main>
-<footer><span>浮世 · 潮汐 / UKIYO TIDES</span><span>交互设计及可行性 · 名画交互实验 · 2026</span><span>BODY → MOTION → ART</span></footer><script type="module" src="app.js"></script></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="浮世·潮汐：从北斋名画提取卷浪、泡沫与山形，以身体动作唤起全屏水纹。">
+  <title>浮世 · 潮汐 — 北斋名画交互</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=20261016-3">
+</head>
+<body>
+  <div id="stage" class="stage">
+    <img id="painting" src="assets/wave-study.svg" alt="从《神奈川冲浪里》抽象提取的卷浪、泡沫、富士山轮廓与木刻线条。">
+    <canvas id="art" tabindex="0" aria-label="动态海浪画面"></canvas>
+    <canvas id="foam" aria-hidden="true"></canvas>
+    <div id="loader" class="loader">正在展开画卷…</div>
+    <video id="camera" playsinline muted hidden></video>
+  </div>
+
+  <!-- 延续课堂草间弥生模板的结构：全屏画布、居中开始卡片、固定状态提示。 -->
+  <div id="intro" role="dialog" aria-modal="true" aria-labelledby="experienceTitle">
+    <div class="card">
+      <h1 id="experienceTitle">浮世 · 潮汐</h1>
+      <p class="sub">致敬 葛饰北斋《神奈川冲浪里》· Ukiyo Tides</p>
+      <ul>
+        <li>原画的卷浪、泡沫与山形，化作流动的抽象海景</li>
+        <li>挥动双手，水纹与浪花跟随身体流动</li>
+        <li>双臂张开，潮势增强，海声变得明亮</li>
+        <li>双手举过头顶，浪花化作金色光点</li>
+        <li>鼠标 / 触屏移动造浪，点击激起扩散涟漪</li>
+        <li><kbd>B</kbd> 身体交互 · <kbd>M</kbd> 海声 · <kbd>S</kbd> 保存 · <kbd>R</kbd> 重置 · <kbd>空格</kbd> 暂停 · <kbd>Esc</kbd> 说明</li>
+      </ul>
+      <p class="tip">身体交互时，退后让摄像头看到头、肩膀与双手。也可直接使用鼠标或触屏体验。</p>
+      <details class="settings">
+        <summary>交互设置与原作资料</summary>
+        <div class="settings-controls">
+          <button id="cameraToggle">◉ 开启身体交互</button>
+          <button id="soundToggle" aria-pressed="false">♫ <span>开启海声</span></button>
+          <button id="save">↓ 留住此刻</button>
+          <button id="reset">↺ 重置</button>
+          <button id="fullscreen">⛶ 浏览器全屏</button>
+        </div>
+        <p class="privacy">摄像头画面仅在浏览器本地处理，不上传、不保存；海声需手动开启。</p>
+        <p class="sources"><a href="https://www.artic.edu/artworks/24645" target="_blank" rel="noopener noreferrer">原作资料 ↗</a> · <a href="assets/great-wave-original.png" target="_blank" rel="noopener noreferrer">查看原画 ↗</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Great_Wave_off_Kanagawa.png" target="_blank" rel="noopener noreferrer">图像来源 ↗</a></p>
+      </details>
+      <button id="start">进入潮汐 · Enter the tides</button>
+    </div>
+  </div>
+
+  <div id="sceneInfo" hidden><span id="modeLabel">指尖造浪</span> · <output id="tideValue">平潮</output><span class="meter"><i id="meter"></i></span><button id="menuToggle" aria-haspopup="dialog">说明 / 设置</button></div>
+  <span id="stageHint" hidden>移动鼠标 / 轻触画面，唤醒海浪</span>
+  <div id="status" role="status" aria-live="polite">请选择进入潮汐，或在设置中开启身体交互。</div>
+  <script type="module" src="app.js?v=20261016-3"></script>
+</body>
+</html>

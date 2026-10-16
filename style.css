@@ -1,2 +1,126 @@
-:root{--paper:#eeeadd;--ink:#182e3c;--muted:#6d776f;--line:#c9ccbd;--red:#b64c36}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}header,main,footer{width:min(1320px,90%);margin:auto}header{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-family:"Songti SC",serif;font-size:22px;letter-spacing:2px}.brand-icon{display:grid;place-items:center;width:35px;height:35px;border:1px solid var(--ink);border-radius:50%;font-size:30px}.brand small{font:10px monospace;letter-spacing:1.8px;margin-left:8px}.nav-link{font-size:12px}.nav-link span{margin-left:26px}.intro{padding:49px 0 42px;display:flex;align-items:flex-end;justify-content:space-between}.eyebrow{font:10px monospace;letter-spacing:2px;margin:0 0 20px;color:var(--muted)}h1{font-family:"Songti SC","Noto Serif SC",serif;font-weight:400;font-size:clamp(38px,4.8vw,66px);line-height:1.25;letter-spacing:3px;margin:0}h1 span{color:var(--red)}.intro-right{width:330px;padding-bottom:6px}.intro-right p{font-size:15px;line-height:1.9;letter-spacing:1px;margin:0 0 24px}.work-credit{font-size:10px;color:var(--muted);letter-spacing:1px}.experience{position:relative}.stage{position:relative;aspect-ratio:1.82;background:#d4cdb6;overflow:hidden;isolation:isolate}.stage>img,.stage>canvas{position:absolute;width:100%;height:100%;inset:0;object-fit:cover}.stage>img{z-index:-1}.stage>canvas{touch-action:none}#foam{pointer-events:none}.stage-top,.stage-bottom{position:absolute;left:26px;right:26px;display:flex;justify-content:space-between;pointer-events:none}.stage-top{top:22px;align-items:center}.live{font-size:11px;letter-spacing:1px;background:#eeeadddb;padding:9px 12px;display:flex;gap:8px;align-items:center}.live i{width:5px;height:5px;border-radius:50%;background:var(--red)}.icon-button{pointer-events:auto;color:var(--ink);font-size:26px;border:0;background:#eeeaddcf;width:36px;height:36px}.stage-bottom{bottom:22px;align-items:flex-end}.vertical{writing-mode:vertical-rl;font:19px "Songti SC",serif;letter-spacing:4px;padding:13px 8px;background:#eeeaddbd}.seal{display:block;width:34px;background:var(--red);color:var(--paper);padding:8px 4px;margin-top:8px;font:12px "Songti SC",serif;letter-spacing:3px}.stage-hint{font-size:10px;letter-spacing:1px;background:#eeeaddcf;padding:8px 12px}.loader{position:absolute;inset:0;display:grid;place-items:center;background:var(--paper);font-size:13px;letter-spacing:3px}.loader.hidden{display:none}.toolbar{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line);gap:14px}.controls{display:flex;gap:12px;flex-wrap:wrap}.controls button{border:1px solid var(--line);background:transparent;padding:12px 18px;font-size:11px;letter-spacing:1px;color:var(--ink);transition:background .2s}.controls button:hover{background:#dcded0}.controls .primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}.controls .primary:hover{background:#304e5e}.controls button:disabled{opacity:.5;cursor:wait}.tide{display:flex;gap:12px;align-items:center;font-size:10px;white-space:nowrap}.meter{width:70px;height:3px;background:#ced0c0}.meter i{display:block;height:100%;width:25%;background:var(--red);transition:width .2s}.tide output{width:28px}.status{min-height:20px;color:var(--muted);font-size:11px;line-height:1.7;margin:12px 0 0}.gestures{display:grid;grid-template-columns:repeat(3,1fr);padding:45px 0 55px}.gestures article{padding:0 35px;border-right:1px solid var(--line);position:relative}.gestures article:first-child{padding-left:0}.gestures article:last-child{border:0}.step{font:9px monospace;letter-spacing:1.7px;color:var(--muted)}.gesture-icon{font-size:33px;position:absolute;right:38px;top:10px;color:var(--red)}.gestures h2{font-size:16px;letter-spacing:2px;font-weight:400;margin:23px 0 12px}.gestures p{font-size:12px;line-height:1.9;margin:0;color:var(--muted)}.about{border-top:1px solid var(--line);padding:56px 0 65px;display:grid;grid-template-columns:1fr 1fr;gap:50px}.about h2{font:400 38px/1.5 "Songti SC",serif;letter-spacing:3px;margin:0}.about p:not(.eyebrow){font-size:13px;line-height:2;margin:0 0 18px}.about .note{color:var(--muted);font-size:11px!important}.about a{font-size:11px;border-bottom:1px solid var(--ink);padding-bottom:5px}footer{border-top:1px solid var(--line);padding:24px 0 30px;display:flex;justify-content:space-between;gap:16px;font:9px monospace;color:var(--muted);letter-spacing:1px}:focus-visible{outline:2px solid var(--red);outline-offset:4px}.stage:fullscreen{height:100vh;width:100vw;aspect-ratio:auto;background:#172e3b}.stage:fullscreen>img{object-fit:cover}@media(max-width:700px){header{height:72px}.brand{font-size:18px;gap:8px}.brand small{display:none}.intro{padding:32px 0;gap:24px;align-items:flex-start}.intro-right{width:44%;padding-top:35px}.intro-right p{font-size:12px;margin-bottom:15px}.work-credit{font-size:9px;line-height:1.8}.eyebrow{font-size:8px;letter-spacing:1px}h1{font-size:36px;letter-spacing:0}.stage{aspect-ratio:1.35}.stage-top,.stage-bottom{left:12px;right:12px}.stage-top{top:12px}.stage-bottom{bottom:12px}.vertical{font-size:14px;padding:8px 5px}.stage-hint{font-size:8px;max-width:70%}.toolbar{align-items:flex-start;flex-direction:column}.controls{gap:7px;width:100%}.controls button{padding:11px 9px;font-size:10px}.tide{align-self:flex-end}.gestures{padding:32px 0}.gestures article{padding:0 12px}.gesture-icon{position:static;font-size:26px;margin-top:12px}.gestures h2{font-size:12px;letter-spacing:0;margin-top:10px}.gestures p{font-size:10px}.step{font-size:7px;letter-spacing:0}.about{grid-template-columns:1fr;gap:24px;padding:35px 0}.about h2{font-size:30px}footer{flex-wrap:wrap;font-size:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media(max-width:480px){.intro{flex-direction:column;gap:20px}.intro-right{width:100%;padding-top:0}.intro-right p{display:inline-block;margin:0 18px 0 0;font-size:12px}.work-credit{display:inline-block;max-width:140px;vertical-align:bottom}h1{font-size:36px;letter-spacing:1px}}
+/* 全屏画布，没有滚动条 / full-screen canvas, no scrollbars */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000000;
+  color: #ffe9f2;
+  font-family: "Avenir Next", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+/* 开始界面 / start screen */
+#intro {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  z-index: 10;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.card {
+  max-width: 640px;
+  padding: 28px 32px;
+  background: rgba(20, 8, 16, 0.92);
+  border: 2px solid #ff4f7a;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: clamp(2.2rem, 8vw, 4rem);
+  margin: 0;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.sub {
+  margin: 6px 0 18px;
+  opacity: 0.8;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.tip {
+  font-size: 0.9em;
+  opacity: 0.75;
+  margin: 0 0 20px;
+}
+
+kbd {
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 0 6px;
+  font-size: 0.85em;
+}
+
+#start {
+  font-family: inherit;
+  font-size: 1.15rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 999px;
+  background: #ff4f7a;
+  color: #14040a;
+  cursor: pointer;
+}
+
+#start:hover {
+  filter: brightness(1.15);
+}
+
+/* 状态提示 / status line */
+#status {
+  position: fixed;
+  left: 16px;
+  bottom: 12px;
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  pointer-events: none;
+  max-width: calc(100vw - 48px);
+}
+
+/* 保持模板页面结构，只补充互动作品所需的画布与无障碍控制。 */
+* { box-sizing: border-box; }
+.stage { position: fixed; inset: 0; overflow: hidden; isolation: isolate; background: #eae1ca; }
+.stage > img, .stage > canvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.stage > img { z-index: -1; }
+#art { touch-action: none; outline: none; }
+#art:focus-visible { outline: 2px solid #ff4f7a; outline-offset: -3px; }
+#foam { pointer-events: none; }
+#intro[hidden], #sceneInfo[hidden], .loader.hidden { display: none; }
+.card { width: 100%; }
+.card li { margin-bottom: 3px; }
+.settings { margin: 0 0 18px; text-align: left; font-size: .85rem; }
+.settings summary { cursor: pointer; padding: 8px 0; opacity: .8; }
+.settings-controls { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+.settings-controls button { font: inherit; padding: 8px 10px; color: #ffe9f2; background: transparent; border: 1px solid #754556; border-radius: 5px; cursor: pointer; }
+.settings-controls button:disabled { opacity: .5; cursor: wait; }
+.settings-controls button:hover { background: #442132; }
+.privacy, .sources { font-size: .75rem; line-height: 1.7; opacity: .75; }
+.sources a { color: inherit; text-underline-offset: 3px; }
+#sceneInfo { position: fixed; top: 14px; right: 16px; display: flex; align-items: center; gap: 7px; padding: 7px 9px; color: #fff7ea; background: rgba(0,0,0,.55); border-radius: 4px; font-size: .8rem; }
+#menuToggle { font: inherit; margin-left: 9px; color: inherit; background: transparent; border: 0; border-left: 1px solid #ffffff55; padding: 0 0 0 10px; cursor: pointer; }
+.meter { width: 35px; height: 2px; background: #ffffff44; }
+.meter i { display: block; width: 20%; height: 100%; background: #ff4f7a; }
+#status { margin: 0; line-height: 1.6; }
+.loader { position: absolute; inset: 0; display: grid; place-items: center; color: #182e3c; background: #eae1ca; }
+button:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid #ff4f7a; outline-offset: 4px; }
+@media (max-height: 620px) { #intro { align-items: flex-start; } }
+@media (max-width: 480px) { .card { padding: 22px 20px; } .card ul { font-size: .88rem; line-height: 1.8; } .sub { font-size: .82rem; } .tip { font-size: .78rem; } #status { font-size: .72rem; max-width: calc(100vw - 32px); } }

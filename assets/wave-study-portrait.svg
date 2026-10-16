@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1440" viewBox="0 0 900 1440"><rect width="900" height="1440" fill="#eee9dc"/>
+<g stroke="#202322" stroke-width="1" opacity=".22"><path d="M60 60H840V1380H60ZM60 260H840M60 1190H840M620 60V1380" fill="none"/></g>
+<text x="92" y="128" font-family="Helvetica,Arial,sans-serif" font-size="19" letter-spacing="5" fill="#202322">UKIYO / TIDES</text>
+<text x="90" y="216" font-family="Helvetica,Arial,sans-serif" font-size="78" font-weight="800" letter-spacing="-4" fill="#202322">WAVE STUDY</text>
+<circle cx="726" cy="346" r="70" fill="#cf442c"/>
+<path d="M60 735A305 305 0 0 1 670 735H560A195 195 0 0 0 170 735Z" fill="#234f83"/>
+<path d="M60 735H170V1084H60ZM560 735H670V1040H560Z" fill="#234f83"/>
+<path d="M260 735A105 105 0 0 1 470 735V820H365V735Z" fill="#202322"/>
+<path d="M620 1050L750 795 880 1050Z" fill="#d6ad37"/>
+<path d="M717 859L750 795 783 859Z" fill="#eee9dc"/>
+<rect x="60" y="1084" width="780" height="36" fill="#202322"/>
+<rect x="60" y="1150" width="780" height="86" fill="#427ba5"/>
+<rect x="365" y="1150" width="475" height="86" fill="#234f83"/>
+<rect x="60" y="1266" width="780" height="24" fill="#202322"/>
+<path d="M465 1010H667L641 1030H491Z" fill="#cf442c"/>
+<text x="92" y="1350" font-family="Helvetica,Arial,sans-serif" font-size="15" letter-spacing="3" fill="#202322">HOKUSAI / 1830—1833</text>
+<text x="730" y="1350" font-family="Helvetica,Arial,sans-serif" font-size="36" font-weight="700" fill="#202322">01</text>
+<path d="M95 735A270 270 0 0 1 635 735" fill="none" stroke="#eee9dc" stroke-width="3"/>
+<path d="M116 735A249 249 0 0 1 614 735" fill="none" stroke="#eee9dc" stroke-width="3"/>
+<path d="M137 735A228 228 0 0 1 593 735" fill="none" stroke="#eee9dc" stroke-width="3"/>
+<path d="M158 735A207 207 0 0 1 572 735" fill="none" stroke="#eee9dc" stroke-width="3"/>
+<path d="M179 735A186 186 0 0 1 551 735" fill="none" stroke="#eee9dc" stroke-width="3"/>
+<circle cx="90" cy="930.0" r="7" fill="#eee9dc"/>
+<circle cx="130" cy="945.2" r="7" fill="#eee9dc"/>
+<circle cx="170" cy="960.4" r="7" fill="#eee9dc"/>
+<circle cx="210" cy="975.6" r="7" fill="#eee9dc"/>
+</svg>

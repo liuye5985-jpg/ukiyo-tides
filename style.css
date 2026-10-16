@@ -124,3 +124,21 @@ kbd {
 button:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid #ff4f7a; outline-offset: 4px; }
 @media (max-height: 620px) { #intro { align-items: flex-start; } }
 @media (max-width: 480px) { .card { padding: 22px 20px; } .card ul { font-size: .88rem; line-height: 1.8; } .sub { font-size: .82rem; } .tip { font-size: .78rem; } #status { font-size: .72rem; max-width: calc(100vw - 32px); } }
+
+/* Bauhaus visual language; keep the Kusama template's screen and card structure. */
+html, body, #intro { background: #eee9dc; color: #202322; }
+.card { background: #eee9dc; border: 1px solid #202322; border-radius: 0; box-shadow: 9px 9px 0 #202322; }
+.composition-label { margin: 0 0 20px; font: 11px/1.4 "Helvetica Neue", Arial, sans-serif; letter-spacing: .2em; text-align: left; }
+.card h1 { font-weight: 800; letter-spacing: -.035em; }
+.card ul { border-top: 1px solid #202322; padding-top: 18px; }
+.card li { margin-bottom: 6px; }
+#start { background: #cf442c; color: #eee9dc; border-radius: 0; font-weight: 600; }
+kbd { border-radius: 0; }
+.settings-controls button { color: #202322; border-color: #202322; border-radius: 0; }
+.settings-controls button:hover { background: #d6ad37; }
+#sceneInfo, #status { background: #eee9dce8; color: #202322; border: 1px solid #202322; border-radius: 0; }
+#menuToggle { border-color: #20232266; }
+.meter { background: #20232233; }.meter i { background: #cf442c; }
+button:focus-visible, summary:focus-visible, a:focus-visible { outline-color: #cf442c; }
+#art:focus-visible { outline-color: #cf442c; }
+#painting { object-fit: contain; background: #eee9dc; }

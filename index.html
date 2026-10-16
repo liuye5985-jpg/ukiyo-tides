@@ -7,11 +7,11 @@
   <meta name="description" content="浮世·潮汐：从北斋名画提取卷浪、泡沫与山形，以身体动作唤起全屏水纹。">
   <title>浮世 · 潮汐 — 北斋名画交互</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20261016-3">
+  <link rel="stylesheet" href="style.css?v=20261016-5">
 </head>
 <body>
   <div id="stage" class="stage">
-    <img id="painting" src="assets/wave-study.svg" alt="从《神奈川冲浪里》抽象提取的卷浪、泡沫、富士山轮廓与木刻线条。">
+    <img id="painting" src="assets/wave-study.svg?v=5" alt="北斋名画的包豪斯几何重构：蓝色圆弧、黄色三角、朱红圆形与水平色带。">
     <canvas id="art" tabindex="0" aria-label="动态海浪画面"></canvas>
     <canvas id="foam" aria-hidden="true"></canvas>
     <div id="loader" class="loader">正在展开画卷…</div>
@@ -21,10 +21,11 @@
   <!-- 延续课堂草间弥生模板的结构：全屏画布、居中开始卡片、固定状态提示。 -->
   <div id="intro" role="dialog" aria-modal="true" aria-labelledby="experienceTitle">
     <div class="card">
+      <p class="composition-label">01 / INTERACTIVE COMPOSITION</p>
       <h1 id="experienceTitle">浮世 · 潮汐</h1>
       <p class="sub">致敬 葛饰北斋《神奈川冲浪里》· Ukiyo Tides</p>
       <ul>
-        <li>原画的卷浪、泡沫与山形，化作流动的抽象海景</li>
+        <li>圆弧化作巨浪，三角构成山形，色块重组海面</li>
         <li>挥动双手，水纹与浪花跟随身体流动</li>
         <li>双臂张开，潮势增强，海声变得明亮</li>
         <li>双手举过头顶，浪花化作金色光点</li>
@@ -51,6 +52,6 @@
   <div id="sceneInfo" hidden><span id="modeLabel">指尖造浪</span> · <output id="tideValue">平潮</output><span class="meter"><i id="meter"></i></span><button id="menuToggle" aria-haspopup="dialog">说明 / 设置</button></div>
   <span id="stageHint" hidden>移动鼠标 / 轻触画面，唤醒海浪</span>
   <div id="status" role="status" aria-live="polite">请选择进入潮汐，或在设置中开启身体交互。</div>
-  <script type="module" src="app.js?v=20261016-3"></script>
+  <script type="module" src="app.js?v=20261016-5"></script>
 </body>
 </html>

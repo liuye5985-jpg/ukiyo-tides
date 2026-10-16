@@ -142,3 +142,9 @@ kbd { border-radius: 0; }
 button:focus-visible, summary:focus-visible, a:focus-visible { outline-color: #cf442c; }
 #art:focus-visible { outline-color: #cf442c; }
 #painting { object-fit: contain; background: #eee9dc; }
+#sceneInfo { flex-wrap: wrap; max-width: calc(100vw - 32px); }
+.mode-controls { display: flex; gap: 2px; margin-right: 7px; }
+.mode-controls button { font: inherit; border: 0; padding: 5px 7px; background: transparent; color: #202322; cursor: pointer; }
+.mode-controls button[aria-pressed="true"] { background: #202322; color: #eee9dc; }
+#status { max-width: min(780px,calc(100vw - 32px)); }
+@media(max-width:540px){#sceneInfo{left:16px;right:16px;justify-content:space-between}.mode-controls{margin:0}.mode-controls button{padding:5px;font-size:11px}#modeLabel{display:none}#sceneInfo>.meter{display:none}}

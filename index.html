@@ -7,7 +7,7 @@
   <meta name="description" content="浮世·潮汐：从北斋名画提取卷浪、泡沫与山形，以身体动作唤起全屏水纹。">
   <title>浮世 · 潮汐 — 北斋名画交互</title>
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20261016-5">
+  <link rel="stylesheet" href="style.css?v=20261016-7">
 </head>
 <body>
   <div id="stage" class="stage">
@@ -26,11 +26,11 @@
       <p class="sub">致敬 葛饰北斋《神奈川冲浪里》· Ukiyo Tides</p>
       <ul>
         <li>圆弧化作巨浪，三角构成山形，色块重组海面</li>
-        <li>挥动双手，水纹与浪花跟随身体流动</li>
-        <li>双臂张开，潮势增强，海声变得明亮</li>
-        <li>双手举过头顶，浪花化作金色光点</li>
-        <li>鼠标 / 触屏移动造浪，点击激起扩散涟漪</li>
-        <li><kbd>B</kbd> 身体交互 · <kbd>M</kbd> 海声 · <kbd>S</kbd> 保存 · <kbd>R</kbd> 重置 · <kbd>空格</kbd> 暂停 · <kbd>Esc</kbd> 说明</li>
+        <li>拖动红日、巨浪、山形与小舟，亲手重组画面</li>
+        <li>双指缩放旋转；鼠标滚轮缩放，Shift＋滚轮旋转</li>
+        <li>身体模式：双手牵动红日与舟船，张臂撑开巨浪</li>
+        <li>潮汐 / 构成 / 节奏三种玩法；双击或 C 切换配色</li>
+        <li><kbd>1</kbd>–<kbd>3</kbd> 模式 · <kbd>B</kbd> 身体交互 · <kbd>M</kbd> 海声 · <kbd>S</kbd> 保存 · <kbd>R</kbd> 重置 · <kbd>空格</kbd> 暂停 · <kbd>Esc</kbd> 说明</li>
       </ul>
       <p class="tip">身体交互时，退后让摄像头看到头、肩膀与双手。也可直接使用鼠标或触屏体验。</p>
       <details class="settings">
@@ -49,9 +49,9 @@
     </div>
   </div>
 
-  <div id="sceneInfo" hidden><span id="modeLabel">指尖造浪</span> · <output id="tideValue">平潮</output><span class="meter"><i id="meter"></i></span><button id="menuToggle" aria-haspopup="dialog">说明 / 设置</button></div>
+  <div id="sceneInfo" hidden><div class="mode-controls" role="group" aria-label="互动模式"><button data-mode="1" aria-pressed="true">01 潮汐</button><button data-mode="2" aria-pressed="false">02 构成</button><button data-mode="3" aria-pressed="false">03 节奏</button></div><span id="modeLabel">指尖造浪</span> · <output id="tideValue">平潮</output><span class="meter"><i id="meter"></i></span><button id="menuToggle" aria-haspopup="dialog">说明 / 设置</button></div>
   <span id="stageHint" hidden>移动鼠标 / 轻触画面，唤醒海浪</span>
   <div id="status" role="status" aria-live="polite">请选择进入潮汐，或在设置中开启身体交互。</div>
-  <script type="module" src="app.js?v=20261016-5"></script>
+  <script type="module" src="app.js?v=20261016-7"></script>
 </body>
 </html>
